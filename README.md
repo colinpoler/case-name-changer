@@ -73,7 +73,9 @@ Limitations
 
 Because the text in a PDF is split across many text elements, some of which split words, the tool can't really squeeze in longer names than were initially present. In some cases, e.g. `Ivy` -> `Mim` there aren't more letters but `M` characters are so wide it will still ruin the kerning, so make sure to check for that.
 
-Additionally, sometimes names aren't correctly detected in some PDFs, because pdfrw can insert/remove random whitespace or jumble words. So this might not work on every PDF.
+Additionally, sometimes names aren't correctly detected in some PDFs, because pdfrw can insert/remove random whitespace or jumble words. So both detection and replacement might not work on every or even every PDF.
+
+It's also worth noting that the name suggestor is quite simple, and may suggest names that don't culturally make sense (e.g. an Egyptian first name with a Ghanaian surname). Additionally, it is based on real data, and we must realize that real data can be flawed.
 
 Acknowledgements
 ----------------
